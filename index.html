@@ -1,0 +1,111 @@
+<!--
+Name: Jeel Mitesh Tandel
+Student Number: 041096158
+Date: November 5th, 2023
+Section: CST 8285 332
+Professor: Alem Legesse
+This is the index.html for displaying home page for portfolio
+It includes link for styling and functions for this site
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeel Tandel</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="div1">
+        <h1><a href="index.html" id="t1">JEEL TANDEL</a></h1>
+        <div class="h"><a href="index.html" id="t2">HOME</a></div>
+        <div class="r"><a href="resume.html" id="t3">RESUME</a></div>
+        <div class="p"><a href="projects.html" id="t4">PROJECTS</a></div>
+        <div class="c"><a href="contact.html" id="t5">CONTACT</a></div>
+        <h2 id="div1h2">JEEL MITESH TANDEL</h2>
+        <div>
+            <img src="img/jeel.png" alt="profile picture">
+        </div>
+    </div>
+    <script>
+        const t1 = document.getElementById('t1');
+        const t2 = document.getElementById('t2');
+        const t3 = document.getElementById('t3');
+        const t4 = document.getElementById('t4');
+        const t5 = document.getElementById('t5');
+
+        function changeColorOnHover(linkElement, hoverColor) {
+            const originalColor = linkElement.style.color;
+
+            linkElement.addEventListener('mouseenter', () => {
+                linkElement.style.color = hoverColor;
+            });
+
+            linkElement.addEventListener('mouseleave', () => {
+                linkElement.style.color = originalColor;
+            });
+        }
+        const hoverColor = 'rgb(57, 94, 82)';
+        changeColorOnHover(t1, hoverColor);
+        changeColorOnHover(t2, hoverColor);
+        changeColorOnHover(t3, hoverColor);
+        changeColorOnHover(t4, hoverColor);
+        changeColorOnHover(t5, hoverColor);
+    </script>
+    <main class=" main">
+        <p><strong>I am a <span id="changing-text">Web Developer</span></strong></p>
+        <script>
+            const roles = ["Web Developer", "Programmer", "Student"];
+            let currentIndex = 0;
+            const textElement = document.getElementById("changing-text");
+
+            function changeText() {
+                textElement.textContent = roles[currentIndex];
+                currentIndex = (currentIndex + 1) % roles.length;
+            }
+            setInterval(changeText, 2000);
+        </script>
+        <p id="p1">I'm currently in my second term of computer programming studies, where I'm diving deep into the
+            world
+            of
+            coding and software development. When I'm not writing lines of code, I'm busy pursuing my passion for
+            DJing.
+            Mixing beats and creating music is not only my hobby but also a creative outlet that allows me to
+            express
+            myself. In addition to my studies and DJing, I'm actively engaged in various activities that keep me
+            inspired and motivated as I continue to explore the dynamic field of computer programming.</p>
+        <p id="p2">Algonquin College stands as a distinguished institution committed to the pursuit of educational
+            excellence.
+            With a storied legacy of cultivating talent and igniting innovation, our college is a thriving nexus for
+            students poised to embark on journeys of academic accomplishment and personal development. Celebrated
+            for
+            our diverse programs, devoted faculty, and a vibrant community, Algonquin College offers an enriching
+            environment where students can delve into their interests, acquire vital skills, and pave the way for a
+            prosperous future. Whether you're charting a course in a technical, creative, or professional field,
+            Algonquin College delivers a world-class educational experience that unlocks a realm of boundless
+            opportunities.</p>
+        <p id="p3">Information about my college: <a href="https://www.algonquincollege.com/" target="_blank">Algonquin
+                College</a> (Note: This link will open in new tab.)</p>
+        <footer>
+            <p id="pc">&copy; 2023 Jeel Tandel</p>
+            <a id="fb" href="https://www.facebook.com/jeel.m.tandel?mibextid=ZbWKwL" target="_blank">
+                <img src="img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a id="li"
+                href="https://www.linkedin.com/in/jeel-tandel-6b6822294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank">
+                <img src="img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a id="i" href="https://instagram.com/jeelmtandel?utm_source=qr&igshid=MThlNWY1MzQwNA==" target="_blank">
+                <img src="img/instagram-icon.png" alt="Instagram">
+            </a>
+            <a id="x" href="https://twitter.com/jeel_tandel" target="_blank">
+                <img src="img/twitter-x-logo.png" alt="X">
+            </a>
+        </footer>
+    </main>
+</body>
+
+</html>

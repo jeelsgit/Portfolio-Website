@@ -1,0 +1,139 @@
+<!--
+Name: Jeel Mitesh Tandel
+Student Number: 041096158
+Date: November 5th, 2023
+Section: CST 8285 332
+Professor: Alem Legesse
+This is the projects.html for displaying projects page for portfolio
+It includes link for styling and functions for this site
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeel Tandel</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1><a href="index.html" id="t1">JEEL TANDEL</a></h1>
+        <div class="h"><a href="index.html" id="t2">HOME</a></div>
+        <div class="r"><a href="resume.html" id="t3">RESUME</a></div>
+        <div class="p"><a href="projects.html" id="t4">PROJECTS</a></div>
+        <div class="c"><a href="contact.html" id="t5">CONTACT</a></div>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img2/spotify.jpeg" style="width:100%" alt="spotify project">
+            <div class="text">Spotify Database Management</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img2/Dunkirk.png" style="width:100%" alt="amazon sample project">
+            <div class="text">Sample Image (Amazon)</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img2/KF.png" style="width:100%" alt="google sample project">
+            <div class="text">Sample Image (Google)</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <div class="container">
+        <div class="project" id="project1">
+            <h2>Project 1: Spotify Database Management</h2>
+            <p>Description: Spotify music library contains music albums, artists etc., where user can access the library and can search for any song. </p>
+            <p>Date Completed: October 22nd, 2023</p>
+            <p>Technologies Used: SQL, MySql, SSMS, Access</p>
+            <img src="img/spotify-icon.png" alt="Project 1 Screenshot">
+        </div>
+
+        <div class="project" id="project2">
+            <h2>Project 2: Amazon Sample Project</h2>
+            <p>Description of Project 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Date Completed: March 15, 2023</p>
+            <p>Technologies Used: Python, Django, PostgreSQL</p>
+            <img src="img/amazon-logo.png" alt="Project 2 Screenshot">
+        </div>
+
+        <div class="project" id="project3">
+            <h2>Project 3: Google Cool Project</h2>
+            <p>Description of Project 3. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <p>Date Completed: May 10, 2023</p>
+            <p>Technologies Used: React, Node.js, MongoDB</p>
+            <img src="img/google-icon.png" alt="Project 3 Screenshot">
+        </div>
+    </div>
+    <main class="main">
+        <footer>
+            <p id="pc">&copy; 2023 Jeel Tandel</p>
+            <a id="fb" href="https://www.facebook.com/jeel.m.tandel?mibextid=ZbWKwL" target="_blank">
+                <img src="img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a id="li"
+                href="https://www.linkedin.com/in/jeel-tandel-6b6822294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank">
+                <img src="img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a id="i" href="https://instagram.com/jeelmtandel?utm_source=qr&igshid=MThlNWY1MzQwNA==" target="_blank">
+                <img src="img/instagram-icon.png" alt="Instagram">
+            </a>
+            <a id="x" href="https://twitter.com/jeel_tandel" target="_blank">
+                <img src="img/twitter-x-logo.png" alt="X">
+            </a>
+        </footer>
+    </main>
+    <span></span>
+    <span></span>
+</body>
+
+</html>

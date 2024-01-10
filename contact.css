@@ -1,0 +1,298 @@
+/**
+Name: Jeel Mitesh Tandel
+Student Number: 041096158
+Date: November 5th, 2023
+Section: CST 8285 332
+Professor: Alem Legesse
+This is the contact.css for styling conatct.html, so that it looks like a proper site
+*/
+html, body {
+    height: 100%;
+  }
+
+body {
+    background-color: #E2D1F9;
+    color: #575757;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: 25px;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body h1 {
+    color: #222;
+}
+
+#t1 {
+    font-size: 60px;
+}
+
+#t5 {
+    font-weight: 700;
+    color: black;
+}
+
+h1 {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 500px;
+}
+
+.div1 {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    padding: 4%;
+    align-items: center;
+    padding-left: 10%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.h, .r, .p, .c {
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(57, 94, 82);
+    display: flex;
+    display: inline;
+    margin-top: 20px;
+  } 
+.h{
+    margin-right: 30px;
+}
+.r {
+    margin-right: 30px;
+}
+.p {
+    margin-right: 30px;
+}
+.c {
+    margin-right: 30px;
+}
+#div1h2 {
+    margin-top: -25px;
+    font-size: 13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(197, 234, 222);
+}
+img {   
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin-top: 0.1%;
+}
+#sh2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 150px;
+    margin-top: 90px;
+    vertical-align: top;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 195px;
+}
+
+#title {
+    margin-top: -40px;
+}
+
+#fh2{
+    font-size: medium;
+    margin-top: 5px;
+}
+
+.h1cont {
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-bottom: 0;
+    font-size: 45px;
+}
+
+#embedmap-canvas img {
+    max-width: none !important;
+    background: none !important;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.form-container {
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    display: inline-block;
+}
+.contactform {
+    display: inline-block;
+    margin-right: 100px;
+}
+#form {
+    padding: 20px;
+    margin-bottom: 100px;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #222;
+}
+label[for]:after {
+    content: " (required)";
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 250%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: auto;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #575757;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+}
+
+.mainform {
+    margin: 0 auto;
+    margin-top: -660px;
+    margin-left: 10%;
+    margin-right: -6%;
+}
+
+.main {
+    margin-top: -390px;
+    margin-left: 150px;
+}
+
+#form {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#fb{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 52%;
+    margin-right: 20px; 
+}
+#li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#i {
+    display: inline-block;
+    margin-right: 20px;
+}
+#x {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#pc {
+    font-size: medium;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 10%;
+}
+
+footer {
+    background-color: #317773;
+    margin-top: 40%;
+    margin-left: -158px;
+    margin-right: -80px;
+    color: aliceblue;
+    padding-bottom: 2%;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#t1:link {
+    color: #222;
+}
+#t5:link {
+    color: #222;
+}
+#t2:link,
+#t3:link,
+#t4:link {
+    color: rgb(57, 94, 82);
+}
+
+#t1:visited{
+    color: #222;
+}
+#t2:visited,
+#t3:visited,
+#t4:visited,
+#t5:visited {
+    color: rgb(57, 94, 82);
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+    .div1 {
+        text-align: center;
+        padding: 2%;
+    }
+    .h, .r, .p, .c {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    img {
+        width: 150px;
+        margin-top: 0;
+    }
+    #sh2 {
+        margin-top: 30px;
+    }
+    .main {
+        margin-top: -180px;
+        margin-left: 20px;
+    }
+    #form {
+        max-width: 95%;
+    }
+    #fb {
+        margin-left: 20px;
+    }
+}
